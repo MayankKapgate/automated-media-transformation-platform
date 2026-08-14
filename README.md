@@ -40,7 +40,7 @@ MediaForge is a robust, full-stack web application designed to demonstrate the p
 
 ```mermaid
 graph LR
-    Client[Frontend UI] -->|FormData| API[/api/upload]
+    Client[Frontend UI] -->|FormData| API["/api/upload"]
     API -->|Node.js SDK| Cloudinary[Cloudinary Cloud]
     API -->|Prisma Client| Database[(PostgreSQL)]
     Cloudinary -->|Returns URL| API
